@@ -1,4 +1,6 @@
-def binary_search(self, nums: List[int], target: int) -> int:
+# takes an anrray of numbers (nums) and a target
+# and returns index of number, or -1 if not found
+def binary_search(nums, target):
     left, right = 0, len(nums) - 1
 
     while left <= right:
