@@ -1,5 +1,6 @@
 # takes an array of numbers (nums) and a target
 # and returns index of number, or -1 if not found
+# note that array must be sorted
 def binary_search(nums, target):
     left, right = 0, len(nums) - 1
 
