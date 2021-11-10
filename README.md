@@ -33,3 +33,5 @@
 
 - Start develop on website
 
+- 100 days of continious github commits. No insignificant commits count. 
+
