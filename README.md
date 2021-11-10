@@ -1,6 +1,6 @@
 # Rebranding: Kaffe ∪ Nocco ∪ Koffein Pillar ?
 
-## General:
+## General
 
 - Time complexity
 - Algorithms:
@@ -25,7 +25,7 @@
         - Game theory
     - Segment tree
 
-## Goals:
+## Goals
 
 - Attempt every advent of code problem for at least three hours per person or until completion.
 
@@ -34,4 +34,10 @@
 - Start develop on website
 
 - 100 days of continious github commits. No insignificant commits count. 
+
+## Next Week
+
+- All data structures (lokomotiv1 responsible for scope of topic)
+- Fix Archive for weekly meetings
+
 
