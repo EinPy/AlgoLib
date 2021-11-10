@@ -1,30 +1,33 @@
-# AlgoLib
+# Rebranding: Kaffe ∪ Nocco ∪ Koffein Pillar ?
 
-Project to build a library of generic algorithms to be used in competetive programming
-It will also include compendiums from time-complexity tuesdays at LTH
-Current inclusions:
-- Binary Search
+## General:
 
+    - Time complexity
+    - Algorithms:
+        - Sorting algorithms
+        - Searches
 
-Plan for what will be included:
-General:
-Time complexity
-Algorithms:
-Sorting algorithms
-Searches
-Binary and linear search
-Greedy
-Dynamic programming
-Knapsack 
-Bit manipulation
-Graph algorithms
-Dfs, Bfs
-Dijkstras
-Tree algorithms (binary tree)
-Strong connectivity (korsarajus algorithm)
-Mathematical topics
-Combinatorics
-Probability
-Game theory
-Segment tree
+        - Binary search
+        - Linear search
+        - Greedy
+        - Dynamic programming
+            - Knapsack 
+        - Bit manipulation
+        - Graph algorithms
+            - Dfs
+            - Bfs
+            - Dijkstras
+            - Tree algorithms (binary tree)
+            - Strong connectivity (korsarajus algorithm)
+        - Mathematical topics
+            - Combinatorics
+            - Probability
+            - Game theory
+        - Segment tree
+
+## Goals:
+
+- Attempt every advent of code problem for at least three hours per person or until completion.
+
+- Complet leetcode 21 days of dynamic programming https://leetcode.com/study-plan/dynamic-programming/
 
