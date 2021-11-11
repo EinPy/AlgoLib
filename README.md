@@ -28,13 +28,13 @@
 
 ## Goals
 
-- Attempt every advent of code problem for at least three hours per person or until completion.
+- [] Attempt every advent of code problem for at least three hours per person or until completion.
 
-- Complet leetcode 21 days of dynamic programming https://leetcode.com/study-plan/dynamic-programming/
+- [] Complet leetcode 21 days of dynamic programming https://leetcode.com/study-plan/dynamic-programming/
 
-- Start develop on website
+- [] Start developement on website
 
-- 100 days of continious github commits. No insignificant commits count. 
+- [] 100 days of continious github commits. No insignificant commits count. 
 
 ## Next Week
 
