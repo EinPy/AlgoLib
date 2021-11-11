@@ -2,28 +2,29 @@
 
 ## General
 
-- Time complexity
-- Algorithms:
-    - Sorting algorithms
-    - Searches
-
-    - Binary search
-    - Linear search
-    - Greedy
-    - Dynamic programming
+- [] Time complexity
+- [] Data structures:
+    - under construction..
+- [] Algorithms:
+    - [] Sorting algorithms
+    - [] Searches
+        - [] Binary search
+        - [] Linear search
+    - [] Greedy
+    - [] Dynamic programming
         - Knapsack 
-    - Bit manipulation
-    - Graph algorithms
-        - Dfs
-        - Bfs
-        - Dijkstras
-        - Tree algorithms (binary tree)
-        - Strong connectivity (korsarajus algorithm)
-    - Mathematical topics
-        - Combinatorics
-        - Probability
-        - Game theory
-    - Segment tree
+    - [] Bit manipulation
+    - [] Graph algorithms
+        - [] Dfs
+        - [] Bfs
+        - [] Dijkstras
+        - [] Tree algorithms (binary tree)
+        - [] Strong connectivity (korsarajus algorithm)
+    - [] Mathematical topics
+        - [] Combinatorics
+        - [] Probability
+        - [] Game theory
+    - [] Segment tree
 
 ## Goals
 
