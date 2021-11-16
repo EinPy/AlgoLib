@@ -1,10 +1,10 @@
 # Data Structures #
 
 ## Initial data structures: ##
-1. [] Stack
-2. [] Tree
-3. [] Dictionary
-4. [] Graph
+1. [x] Stack
+2. [x] Tree
+3. [X] Dictionary
+4. [X] Graph
 5. [] Hash Table
 6. [] Heap
 7. [] Queue
