@@ -8,7 +8,7 @@
 - [] Algorithms:
     - [] Sorting algorithms
     - [] Searches
-        - [] Binary search
+        - [X] Binary search
         - [] Linear search
     - [] Greedy
     - [] Dynamic programming
