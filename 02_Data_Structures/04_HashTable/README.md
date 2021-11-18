@@ -10,7 +10,7 @@ A great example of the use of a Hash table is for this problem.
 Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length.
 
 with the solution: 
-"""
+´´´Python3
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         p1, p2 = 0, len(numbers) -1
         while p1<p2:
@@ -20,4 +20,4 @@ with the solution:
                 p2 -= 1
             else:
                 p1 += 1
-"""
+´´´
