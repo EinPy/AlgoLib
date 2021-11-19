@@ -15,10 +15,9 @@ Can be implementet with python array and replacing push() with append.
 
 It is faster to use deque from collections.
 
-"""
+```
 from collectoins import deque
 stack = deque()
 stack.append('a')
 stack.pop()
-
-""" 
+```
