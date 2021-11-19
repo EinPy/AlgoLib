@@ -7,6 +7,6 @@
 - [x] Lowest common divisor
 
 ## Slightly less basic ##
-- [] All divisors of number in root n complexity
-- [] prime number in root n complexity / primality test
+- [x] All divisors of number in root n complexity
+- [x] prime number in root n complexity / primality test
 
