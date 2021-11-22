@@ -28,25 +28,36 @@ function bfs(s,e):
 More detailedd pseudo code of solve():
 ```
 def solve(s):
-q queue data structure wiith enqueue and dequeue
-q.enqueue(s)
+	q queue data structure wiith enqueue and dequeue
+	q.enqueue(s)
 
-visitied = [False, ..., False] #size n
-visited[s] = True
+	visitied = [False, ..., False] #size n
+	visited[s] = True
 
-prev = [null, ..., null] #size n, will help reconstruct path, not always needed
-while !q.isEmpty(): #while queue is not empty
-	node = q.dequeue() # pulls top node
-	neighbours = g.get(node) #reach in adjacency list and find neighbours
+	prev = [null, ..., null] #size n, will help reconstruct path, not always needed
+	while !q.isEmpty(): #while queue is not empty
+		node = q.dequeue() # pulls top node
+		neighbours = g.get(node) #reach in adjacency list and find neighbours
 
-	for next in neighbours:
-		if !visited[next]:
-			q.enqueue(next)
-			visited[next] = True
-			prev[next] = node
-	return prev
+		for next in neighbours:
+			if !visited[next]:
+				q.enqueue(next)
+				visited[next] = True
+				prev[next] = node
+		return prev
 ```
 More detailedd pseudo code of reconstructPath():
 ```
 def reconstructPath(s, e, prev):
-test
+	#reconstruct path going backwards from e
+	path = []
+	for (at e, at != null, at prev[at]):
+		path.add(at)
+
+	path.reverse()
+
+	#If s and e are connected return the path
+	if path[0] == s:
+		return path
+	return []
+```
