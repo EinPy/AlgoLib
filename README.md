@@ -28,7 +28,7 @@
 
 ## Goals
 
-- [] Attempt every advent of code problem for at least three hours per person or until completion.
+- [x] Attempt every advent of code problem for at least two hours per person or until completion.
 
 - [] Complet leetcode 21 days of dynamic programming https://leetcode.com/study-plan/dynamic-programming/
 
