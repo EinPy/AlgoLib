@@ -8,7 +8,7 @@
 - [] Algorithms:
     - [] Sorting algorithms
     - [] Searches
-        - [] Binary search
+        - [X] Binary search
         - [] Linear search
     - [] Greedy
     - [] Dynamic programming
@@ -38,7 +38,12 @@
 
 ## Next Week
 
-- All data structures (lokomotiv1 responsible for scope of topic)
+- Sorting algorithms, divide and conqor algorithm. Proofs. Big O notation. 
+
+
+## Meeting archive:
+
+- Basic data structures (lokomotiv1 responsible for scope of topic)
 - Fix Archive for weekly meetings
 
 
