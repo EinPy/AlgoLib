@@ -1,4 +1,4 @@
-# Rebranding: Kaffe ∪ Nocco ∪ Koffein Pillar ?
+# Rebranding: Pojkarna från nårr ?
 
 ## General
 
