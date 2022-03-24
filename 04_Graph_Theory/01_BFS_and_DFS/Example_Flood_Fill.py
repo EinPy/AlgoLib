@@ -5,6 +5,8 @@ def setupInputOutputSublime():
 	sys.stdin = open("C:\\Temp\\input.txt", mode = 'r')
 setupInputOutputSublime()
 
+print("test")
+
 #Solution to: https://leetcode.com/problems/flood-fill/
 #code starts here
     def floodFill(image, sr, sc, newColor):
