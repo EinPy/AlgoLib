@@ -26,6 +26,7 @@ fibRec.cnt = 0
 #improved recursive solution with memoizatoin
 #Using a dict for example, in large scale it will
 #be more effective with array
+#T.C O(N) S.C O(N)
 def fibMem(n, memo = {}):
     fibMem.cnt += 1
     if n in memo:
