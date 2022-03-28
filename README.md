@@ -1,4 +1,4 @@
-# Rebranding: Kaffe ∪ Nocco ∪ Koffein Pillar ?
+# Rebranding: Pojkarna från nårr ?
 
 ## General
 
@@ -15,9 +15,9 @@
         - Knapsack 
     - [] Bit manipulation
     - [] Graph algorithms
-        - [] Dfs
-        - [] Bfs
-        - [] Dijkstras
+        - [x] Dfs
+        - [x] Bfs
+        - [x] Dijkstras
         - [] Tree algorithms (binary tree)
         - [] Strong connectivity (korsarajus algorithm)
     - [] Mathematical topics

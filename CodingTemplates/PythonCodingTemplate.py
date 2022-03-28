@@ -105,14 +105,14 @@ def convexHull(points): #input in typles with coordinates (x,y)
 #Bfs to find distannce to all nodes in graph 
 def bfs(Graph, S):
     q = [S]
-    dists = {S:0}
+    dists = [-1 for _ in range(len(Graph))]
     while q:
         q2 = []
         for u in q:
             for n in Graph[u]:
-                if n not in dists:
-                    dists[v] = dists[u] + 1
-                    q2.append(v)
+                if dists[n] == -1:
+                    dists[n] = dists[u] + 1
+                    q2.append(n)
         q = q2
     return dists
 
