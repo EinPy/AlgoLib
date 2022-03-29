@@ -63,8 +63,8 @@ def canSumRevMem(nums, target,mem):
 canSumRevMem.cnt = 0
 
 
-arr = [7, 14]
-targ = 200
+arr = [2,3, 5]
+targ = 8
 
 print(canSumRev(arr,targ), canSumRev.cnt)
 
