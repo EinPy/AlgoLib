@@ -38,5 +38,18 @@ def fibMem(n, memo = {}):
 fibMem.cnt = 0
 
 
+#implementing tabulation
+#T.C == S.C = O(n)
+def fibTab(n):
+    dp = [0 for _ in range(n+1)]
+    dp[0], dp[1] = 0, 1
+    for i in range(2,n+1):
+        fibTab.cnt += 1
+        dp[i] = dp[i-2] + dp[i-1]
+    return dp[n]
+
+fibTab.cnt = 0
+
 print(fibRec(30), fibRec.cnt)
 print(fibMem(30), fibMem.cnt)
+print(fibTab(30), fibTab.cnt)
