@@ -1,4 +1,4 @@
-# Rebranding: Pojkarna från nårr ?
+# Time complexity tuesdays
 
 ## General
 
@@ -7,12 +7,15 @@
     - under construction..
 - [] Algorithms:
     - [] Sorting algorithms
-    - [] Searches
+    - [x] Searches
         - [X] Binary search
-        - [] Linear search
+        - [x] Linear search
     - [] Greedy
     - [] Dynamic programming
-        - Knapsack 
+        - [x] Recursion
+        - [x] Memoization
+        - [] Tabulation
+        - [] Knapsack 
     - [] Bit manipulation
     - [] Graph algorithms
         - [x] Dfs
@@ -23,6 +26,7 @@
     - [] Mathematical topics
         - [] Combinatorics
         - [] Probability
+        - [] Markovs chains
         - [] Game theory
     - [] Segment tree
 
@@ -38,11 +42,15 @@
 
 ## Next Week
 
-- Sorting algorithms, divide and conqor algorithm. Proofs. Big O notation. 
+- Dynamic Programmig, Tabulation
 
 
 ## Meeting archive:
 
+- Dynamic Programming, recursion and memoization
+- Binary Search
+- BFS and DFS
+- Proofs. Big O notation. 
 - Basic data structures (lokomotiv1 responsible for scope of topic)
 - Fix Archive for weekly meetings
 
