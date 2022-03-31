@@ -40,7 +40,8 @@ def canSumRev(nums, target):
 canSumRev.cnt = 0
 
 #reversed with emmoization 
-#T.C O(n^m))
+#if n is array length and m is target sum
+#T.C O(n*m))
 #S.C O(m)
 def canSumRevMem(nums, target,mem):
     canSumRevMem.cnt += 1
@@ -63,10 +64,29 @@ def canSumRevMem(nums, target,mem):
 canSumRevMem.cnt = 0
 
 
-arr = [2,3, 5]
-targ = 8
+#T.C O(n) where n is target
+def canSumTab(nums, target):
+    dp = [False for _ in range(target+1)]
+    dp[0] = True
+    for n in nums:
+        dp[n] = True
 
-print(canSumRev(arr,targ), canSumRev.cnt)
+    for i in range(target+1):
+        canSumTab.cnt+= 1
+        if dp[i]:
+            for n in nums:
+                if i+n <= target:
+                    dp[i+n] = True
+    return dp[target]
+
+canSumTab.cnt = 0
+
+arr = [2, 3]
+targ = 500
+
+#print(canSumRev(arr,targ), canSumRev.cnt)
 
 mem = [None for _ in range(targ+2)]
 print(canSumRevMem(arr,targ, mem), canSumRevMem.cnt)
+
+print(canSumTab(arr, targ),canSumTab.cnt)
