@@ -7,7 +7,8 @@ strings from array.
 
 Any element may be used as meny times as neccecary
 """
-
+#T.C if len(words) = m and targ = n
+#T.C brute force O(n*m^n) S.C O(n^2)
 def countConstruct(words, targ):
     if targ == "":
         return 1
@@ -20,6 +21,7 @@ def countConstruct(words, targ):
     
     return ways
 
+#T.C (m*n^2) S.C O(m^2)
 def countConstructMem(words, targ, mem = {}):
     if targ in mem:
         return mem[targ]
