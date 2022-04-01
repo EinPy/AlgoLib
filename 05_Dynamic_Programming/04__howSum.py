@@ -11,7 +11,11 @@ If multiple, any return is accepted
 import sys
 sys.setrecursionlimit(10**5)
 
-#T.C O(tgs*len(nums)
+#T.C tgs = n, len(nums) = m
+#n*m recursive calls, for each call copy an array which is linear time
+#--> T.C O(n*m^2)
+#m recursive memory calls, memo oject will at worst be n*m
+#S.C O(n*m)
 def howSum(tgs, nums,mem):
     if tgs < 0:
         return None
