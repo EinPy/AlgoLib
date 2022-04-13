@@ -42,11 +42,12 @@
 
 ## Next Week
 
-- Dynamic Programmig, Tabulation
+Topological sorting
 
 
 ## Meeting archive:
 
+- Dynamic Programmig, Tabulation
 - Dynamic Programming, recursion and memoization
 - Binary Search
 - BFS and DFS
