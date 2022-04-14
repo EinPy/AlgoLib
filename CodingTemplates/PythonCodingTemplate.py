@@ -76,7 +76,7 @@ def normalize(a,b,c):
 
 def is_multiple(x,y):
     if x!=0 and (y%x)==0:
-    	return True
+		return True
     elif x!= 0 and (x%y) == 0:
     	return True
 
@@ -130,7 +130,7 @@ def bfsGrid(grid, r, c):
                 if 0 <= nr <= R and 0 <= nc < C:
                     tup = nr, nc
                     if dists[nr][nc] == -1: #add other conditions here
-                        dits[tup] = dists[r,c] + 1
+                        dists[tup] = dists[r,c] + 1
                         q2.append(tup)
         q = q2
     return dists
@@ -189,5 +189,10 @@ def djikstra(S, F, G):
 
 #To start code
 import sys
+from collections import *
+sys.setrecursionlimit(10**5)
 itr = (line for line in sys.stdin.read().strip().split('\n'))
-input = lambda: next(itr)
+INP = lambda: next(itr)
+def ni(): return int(INP())
+def nl(): return [int(_) for _ in INP().split()]
+
