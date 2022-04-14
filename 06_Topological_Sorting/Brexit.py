@@ -30,8 +30,7 @@ def topSort(graph, L, X):
         #get next node from queue
         node = queue.popleft()
         #add it to the order
-        
-        
+
         #process neighbours and reduce their indegree by one
         for n in graph[node]:
             if inUnion[n]:
@@ -64,4 +63,3 @@ for e in range(P):
 #print(C, P, X, L )
 #print(graph)
 print(topSort(graph, L, X))
-    
