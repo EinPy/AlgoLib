@@ -35,7 +35,23 @@ def howSum(tgs, nums,mem):
     return None
 
 
+def howSumTab(nums, target):
+    dp = [0 for _ in range(target+1)]
+    dp[0] = []
+    
+    for i in range(target):
+        if dp[i] != 0:
+            for n in nums:
+                if i + n <= target:
+                    if dp[i+n] == 0:
+                        dp[i+n] = dp[i] + [n]
+
+    sum = 0
+    for el in dp[target]: sum += el 
+    return dp[target], sum
+
 a = [7,14,5]
-t = 3000
+t = 50
 mem = [-1 for _ in range(t+2)]
 print(howSum(t,a,mem))
+print(howSumTab(a,t),)
