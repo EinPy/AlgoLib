@@ -1,4 +1,8 @@
-4 3 4 1
-2 3
-2 4
-1 2
+6
+gmp:
+solution: set map queue
+base:
+set: base gmp
+map: base gmp
+queue: base
+gmp
