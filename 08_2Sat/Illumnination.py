@@ -9,22 +9,18 @@ def nl(): return [int(_) for _ in INP().split()]
 
 
 n, r, k = nl()
-initialG = [[0 for _ in range(n)] for _ in range(n)]
 lamps = []
 for l in range(1,k+1):
     i,j = nl()
-    initialG[i-1][j-1] = l
     lamps.append((i,j))
 
 #index 2i is true, 2i + 1 is false
 
 adj, adjT = [[] for _ in range(2*k)], [[] for _ in range(2*k)]
 used = [False for _ in range(2*k)]
-#print(used)
+
 order, comp = [], [-1 for _ in range(2*k)]
 assignment = []
-#for row in initialG:
-    #print(row)
 
 #for a node k index tk is true and 2k + 1 is false
 #na and nb are booleans signaling whether
@@ -48,35 +44,21 @@ def addEdge(a, na, b, nb):
     adjT[a].append(neg_b)
 
                         
-#print("Second method:")
+#Iterate over all pairs O(k^2)
 for i in range(k-1):
     for j in range(i+1,k):
         a,b = lamps[i]
         c,d = lamps[j]
         #same row
         if a == c:
-            #if both have to be vertical
-            #if abs(b-d) <= r:
-                #addEdge(i,False, i, False)
-                #ddEdge(j, False, j, False)
-                #print("force True", i, j)
             if abs(b-d) <= 2*r:
                 addEdge(i, True, j, True)
-                #print(i, j)
         #same column
         if b == d:
-            #if both have to be horizontal
-            #if abs(a-c) <= r:
-                #addEdge(i, True, i, True)
-                #addEdge(j, True, j, True)
-                #print("force False", i, j)
             if abs(a-c) <= 2*r:
                 addEdge(i, False, j, False)
-                #print(i, j)
-        
-#print(adj)
-#print(adjT)
-                        
+
+       
 def dfs1(v):
     used[v] = True
     for u in adj[v]:
@@ -84,10 +66,8 @@ def dfs1(v):
             dfs1(u)    
     order.append(v)
 
-def dfs2(v, cl):
-    
+def dfs2(v, cl): 
     comp[v] = cl
-    #print(comp)
     for u in adjT[v]:
         if comp[u] == -1:
             dfs2(u,cl)
@@ -97,20 +77,17 @@ def solve_2SAT():
     for i in range(2 * k):
         if not used[i]:
             dfs1(i)
-    
-    #print(order)
-    #print(comp)
+
     j = 0 #to keep track of which strongly connected component
     for i in range(2*k):
         #reversing the order from the dfs1 to 
-        #visit the graph in topological order
-        #print(order)
+        #visit the graph in reverse topological order
         v = order[2*k - i - 1]
         if comp[v] == -1:
             j += 1
-            #print(j)
             dfs2(v, j)
     
+    #Finding a possible configuration
     assignment = [False for _ in range(k)]
     for i in range(0,2*k, 2):
         if comp[i] == comp[i+1]:

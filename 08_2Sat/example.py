@@ -68,7 +68,7 @@ def solve_2SAT():
             dfs2(v, j)
     
     assignment = [False for _ in range(n)]
-    for i in range(2*n, 2):
+    for i in range(0,2*n, 2):
         if comp[i] == comp[i+1]:
             return False
         assignment[i/2] = comp[i] > comp[i+1]
