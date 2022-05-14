@@ -51,5 +51,25 @@
 			"    return -1",
 		],
 		"description": "Binary serach of array"
+	},
+
+	"lower_bound":{
+		"prefix": "s_lower_bound",
+		"body": [
+			"#Binary search for lower bound",
+			"def lower_bound(a, x):",
+			"    l, r, m = 0, len(a), 0",
+			"    ans = -1",
+			"    while l <= r:",
+			"        mid = (l + r) // 2",
+			"        if a[mid] == x:",
+			"            ans = mid",
+			"            r = mid-1",
+			"        else:",
+			"            l = mid + 1",
+			"    return ans",
+
+		]
 	}
+}
 }
