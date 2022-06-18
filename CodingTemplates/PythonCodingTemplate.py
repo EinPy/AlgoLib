@@ -121,18 +121,16 @@ def bfs(Graph, S):
 def bfsGrid(grid, r, c):
     R = len(grid)
     C = len(grid[0])
-    q = [(r,c)]
+    q = deque([(r,c)])
     dists = [[-1 for _ in range(C)] for _ in range(R)]
     while q:
-        q2 = []
-        for r, c in q:
-            for nr, nc in [(r-1,c), (r+1, c), (r, c+1), (r,c-1)]:
-                if 0 <= nr <= R and 0 <= nc < C:
-                    tup = nr, nc
-                    if dists[nr][nc] == -1: #add other conditions here
-                        dists[tup] = dists[r,c] + 1
-                        q2.append(tup)
-        q = q2
+	r,c = q.popleft()
+	for nr, nc in [(r-1,c), (r+1, c), (r, c+1), (r,c-1)]:
+		if 0 <= nr <= R and 0 <= nc < C:
+			tup = nr, nc
+			if dists[nr][nc] == -1: #add other conditions here
+				dists[tup] = dists[r,c] + 1
+				q.append(tup)
     return dists
 
 
