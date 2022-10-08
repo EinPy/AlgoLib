@@ -126,7 +126,7 @@ def bfsGrid(grid, r, c):
     while q:
 	r,c = q.popleft()
 	for nr, nc in [(r-1,c), (r+1, c), (r, c+1), (r,c-1)]:
-		if 0 <= nr <= R and 0 <= nc < C:
+		if 0 <= nr < R and 0 <= nc < C:
 			tup = nr, nc
 			if dists[nr][nc] == -1: #add other conditions here
 				dists[tup] = dists[r,c] + 1
