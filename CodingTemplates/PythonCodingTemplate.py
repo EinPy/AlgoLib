@@ -121,18 +121,16 @@ def bfs(Graph, S):
 def bfsGrid(grid, r, c):
     R = len(grid)
     C = len(grid[0])
-    q = [(r,c)]
+    q = deque([(r,c)])
     dists = [[-1 for _ in range(C)] for _ in range(R)]
     while q:
-        q2 = []
-        for r, c in q:
-            for nr, nc in [(r-1,c), (r+1, c), (r, c+1), (r,c-1)]:
-                if 0 <= nr <= R and 0 <= nc < C:
-                    tup = nr, nc
-                    if dists[nr][nc] == -1: #add other conditions here
-                        dists[tup] = dists[r,c] + 1
-                        q2.append(tup)
-        q = q2
+	r,c = q.popleft()
+	for nr, nc in [(r-1,c), (r+1, c), (r, c+1), (r,c-1)]:
+		if 0 <= nr < R and 0 <= nc < C:
+			tup = nr, nc
+			if dists[nr][nc] == -1: #add other conditions here
+				dists[tup] = dists[r,c] + 1
+				q.append(tup)
     return dists
 
 
@@ -185,6 +183,28 @@ def djikstra(S, F, G):
         curr = parent[curr]
                 
     return path[::-1]
+
+
+#Find the lexographically smallest rotation of a string S
+def least_rotation(S: str) -> int:
+    """Booth's algorithm."""
+    S += S  # Concatenate string to it self to avoid modular arithmetic
+    f = [-1] * len(S)  # Failure function
+    k = 0  # Least rotation of string found so far
+    for j in range(1, len(S)):
+        sj = S[j]
+        i = f[j - k - 1]
+        while i != -1 and sj != S[k + i + 1]:
+            if sj < S[k + i + 1]:
+                k = j - i - 1
+            i = f[i]
+        if sj != S[k + i + 1]:  # if sj != S[k+i+1], then i == -1
+            if sj < S[k]:  # k+i+1 = k
+                k = j
+            f[j - k] = -1
+        else:
+            f[j - k] = i + 1
+    return k
 
 
 #To start code
